@@ -9,26 +9,25 @@ import SampleDeepStyles from './components/SampleDeepStyles'
 import DeepStyleYourPic from './components/DeepStyleYourPic'
 import Footer from './components/Footer'
 import api from './utils/api.js'
-
+import { BrowserRouter, Route } from 'react-router-dom'
 
 class App extends Component {
   
-
-  
-
   render() {
   	
     return (
-      <div className="App">
-        <Header />
-        <Intro />
-        <HowItWorks />
-        <SampleDeepStyles />
-        <h1>Styles</h1>
-	        
-      	<DeepStyleYourPic />
-      	<Footer /> 
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Route path="/" component={Header} />
+          <Intro />
+          <HowItWorks />
+          <SampleDeepStyles />
+          <h1>Styles</h1>
+  	        
+        	<DeepStyleYourPic />
+        	<Footer /> 
+        </div>
+      </BrowserRouter>
     );
   }
 }
