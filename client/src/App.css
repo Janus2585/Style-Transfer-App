@@ -1,0 +1,190 @@
+.App {
+  text-align: center;
+  
+  margin: auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#headerContainer {
+  
+  width: 100%;
+  background-color: #5daaf7;
+
+}
+
+#headerItems h4 {
+  float: left;
+  font-size: 25px;
+}
+
+#headerItems button {
+  float: right;
+  margin-left: auto;
+}
+
+#headerItems{
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+}
+
+#slider {
+  padding-bottom: 30px;
+  margin: auto;
+  max-width: 1200px;
+
+}
+
+.callToActionbtn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  
+}
+
+.callToActionbtn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.callToActionbuttons {
+  width: 100%;
+}
+
+#callToActionButton1{
+  float:left;
+}
+
+#callToActionButton2{
+  float:right;
+}
+
+.slick-slide img {
+  margin: auto;
+}
+
+#styleWrapper img{
+  margin: 10px 1% 10px 1%;
+  width: 31%;
+  height: 20%;
+  float: left;
+}
+.styleImage {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 30px 20px 30px 30px;
+  float: left;
+}
+
+#introSection {
+  background-image:url('./img/starry_stanford_bigger.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+
+#introContainer {
+ 
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#howItWorksSection{
+  background-color: #d5e0e5;
+}
+
+#introSection{
+
+}
+#introText {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+#introText span{
+
+}
+
+#howToSteps{
+  width: 100%;
+}
+
+#howToStep {
+  margin: 10px 1% 10px 1%;
+  width: 31%;
+  float: left;
+}
+
+#howToStep img{
+  width: 100%;
+}
+
+#howToStep p {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#sampleDeepStyleImages{
+  width: 100%;
+}
+
+#sampleDeepStyleImage{
+  margin: 10px 1% 10px 1%;
+  width: 31%;
+  float: left;
+}
+
+#sampleDeepStyleImage img{
+  width: 100%;
+}
+
+#deepStyleYourPicSection {
+  background-color: #d5e0e5;
+}
+
