@@ -8,7 +8,7 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
 const authRoutes = require('./routes/authRoutes');
-
+require('./routes/billingRoutes')(app);
 
 mongoose.connect(keys.mongoURI);
 

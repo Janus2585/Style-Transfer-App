@@ -15,3 +15,5 @@ ReactDOM.render(
 	<Provider store={store}><App /></Provider>, 
 	document.getElementById('root'));
 registerServiceWorker();
+
+console.log('stripe key swegs ', process.env.REACT_APP_STRIPE_KEY)

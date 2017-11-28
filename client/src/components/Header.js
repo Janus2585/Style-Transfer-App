@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Payments from './Payments'
 
 class Header extends Component {
 	
-	renderContent() { //helper method to determine what to show in the Header
+	renderAuthContent() { //helper method to determine what to show in the Header
 		switch (this.props.auth){
 			case null://waiting to determine is user is logged in or logged out
 				return;
@@ -14,12 +15,28 @@ class Header extends Component {
 			default:
 				return (
 					<div>
-						<li><a href="">Profile</a></li>
-						<li><a href="/api/logout">Logout</a></li>
+						<li key="1"><Payments /></li>
+						<li key="2"><a href="">Profile</a></li>
+						<li key="3"><a href="/api/logout">Logout</a></li>
 					</div>
 				);
 
 		}
+	}
+
+	renderBillingContent() {
+		//check database if user is a premium member
+		/*switch (this.props.auth.premiumMember){
+			case null:
+				return;
+			case 'false': 
+				return (
+					<li><a href="">Upgrade to Premium</a></li>
+				);
+		}
+		*/
+
+
 	}
 
 
@@ -29,7 +46,7 @@ class Header extends Component {
 			    <div className="nav-wrapper">
 			      <a href="/" className="brand-logo left">DeepStyle</a>
 			      <ul id="nav-mobile" className="right hide-on-med-and-down">
-			      	{this.renderContent()}
+			      	{this.renderAuthContent()}
 			      </ul>
 			    </div>
 		  	</nav>
