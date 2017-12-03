@@ -5,7 +5,8 @@ const { Schema } = mongoose;//can also be written as const Schema = mongoose.Sch
 const userSchema = new Schema({
 	googleId: String,
 	email: Array,
-	Subscribed: Boolean
+	//subscription: { type: String, default: 'Free' }
+	credits: { type: Number, default: 0 }
 });
 
 mongoose.model('users', userSchema)

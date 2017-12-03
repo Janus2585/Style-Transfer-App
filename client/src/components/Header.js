@@ -5,7 +5,7 @@ import Payments from './Payments'
 class Header extends Component {
 	
 	renderAuthContent() { //helper method to determine what to show in the Header
-		switch (this.props.auth){
+		switch (this.props.auth) {
 			case null://waiting to determine is user is logged in or logged out
 				return;
 			case false://user is logged out
@@ -16,6 +16,7 @@ class Header extends Component {
 				return (
 					<div>
 						<li key="1"><Payments /></li>
+						<li key="4">Credits: {this.props.auth.credits}</li>
 						<li key="2"><a href="">Profile</a></li>
 						<li key="3"><a href="/api/logout">Logout</a></li>
 					</div>

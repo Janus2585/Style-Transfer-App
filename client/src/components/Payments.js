@@ -10,7 +10,10 @@ class Payments extends Component {
 				name="DeepStyle Premium"
 				description="Create 5 HD photos. No water mark."
 				amount={399}
-				token={token => this.props.handleToken(token)}
+				token={token => {
+					this.props.handleToken(token);
+					//console.log(token);
+				}}
 				stripeKey={process.env.REACT_APP_STRIPE_KEY}
 			>
 				<button className="btn">
